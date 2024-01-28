@@ -1,0 +1,44 @@
+body {
+    background-color: #4b7a97;
+    margin: 0;
+    position: relative;
+}
+
+
+main {
+    padding: 20px;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.site {
+    height: 500px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-style: dotted;
+}
+
+@media(max-width:700px)
+{
+    .projects {
+        flex-direction: column;
+    }
+    .site{
+        width: 100%;
+        
+    }
+}
+
+   

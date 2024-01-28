@@ -1,0 +1,46 @@
+body {
+    background-color: #4b7a97;
+    margin: 0;
+    position: relative;
+}
+
+
+article h1 {
+    width: fit-content;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.p_ul {
+    font-size: 15px;
+    line-height: 38px;
+
+}
+
+article {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #477ea0d9;
+    margin: 20px;;
+    border-radius: 10px;
+}
+
+span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .p_ul{
+    font-size: 20px;
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+  }
+}
