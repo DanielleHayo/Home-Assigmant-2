@@ -52,6 +52,7 @@ main {
         display: flex;
         justify-content: center;
         opacity: 1;
+        
     }
     .projects {
         flex-direction: column;
@@ -61,6 +62,8 @@ main {
     .phone img {
         display:block;
         border-radius: 20px;
+        border:  #15c  2px solid;
+        cursor: pointer;
     }
 
     .phone a{
@@ -72,9 +75,5 @@ main {
         display: none;
     }
 
-    .phone img:hover{
-        display:block;
-        border-radius: 20px;
-        box-shadow: #d7d7d7 5px 5px 1px 3px ;
-    }
+  
 }
