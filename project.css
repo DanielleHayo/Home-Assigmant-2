@@ -12,13 +12,17 @@ main {
 
 .projects {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+    width: 100%;
+
+
 }
 
 .site {
     height: 500px;
-    width: 50%;
+    width: 80%;
     border-radius: 20px;
 }
 
@@ -30,15 +34,48 @@ main {
     border-style: dotted;
 }
 
-@media(max-width:700px)
-{
-    .projects {
-        flex-direction: column;
-    }
-    .site{
-        width: 100%;
-        
-    }
+.phone img {
+    width: 100%;
+    display: none;
 }
 
-   
+.phone a{
+    display: none;
+}
+
+@media(max-width:700px) {
+
+
+    .phone {
+        height: 90%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        opacity: 1;
+    }
+    .projects {
+        flex-direction: column;
+
+    }
+
+    .phone img {
+        display:block;
+        border-radius: 20px;
+    }
+
+    .phone a{
+        display:block;
+    }
+
+    iframe {
+        opacity: 0;
+        display: none;
+    }
+
+    .phone img:hover{
+        display:block;
+        border-radius: 20px;
+        box-shadow: #d7d7d7 5px 5px 1px 3px ;
+    }
+
+}
